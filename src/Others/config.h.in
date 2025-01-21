@@ -1,0 +1,21 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#cmakedefine DEBUG_BUILD_TYPE
+
+namespace project {
+	constexpr char NAME[] {R"(${PROJECT_NAME})"};
+	namespace version {
+		constexpr int MAJOR {${PROJECT_VERSION_MAJOR}};
+    	constexpr int MINOR {${PROJECT_VERSION_MINOR}};
+	}
+}
+
+namespace shader { constexpr char DIRECTORY_PATH[] {R"(${PROJECT_SOURCE_DIR}/Shaders)"}; }
+
+namespace xml {
+	constexpr char SETTINGS_FILE_PATH[] {R"(${PROJECT_SOURCE_DIR}/Xml/settings.xml)"};
+	constexpr char LEVELS_FILE_PATH[] {R"(${PROJECT_SOURCE_DIR}/Xml/levels.xml)"};
+}
+
+#endif // CONFIG_H

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<settings>
+	<window>
+		<frameRateLimit>120</frameRateLimit>
+		<verticalSync>on</verticalSync>
+		<antialiasing>8</antialiasing>
+		<maximize>off</maximize>
+		<size>
+			<x>1155</x>
+			<y>733</y>
+		</size>
+	</window>
+	<camera>
+		<moveSpeed>800</moveSpeed>
+		<margin>
+			<x>300</x>
+			<y>200</y>
+		</margin>
+	</camera>
+</settings>
